@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background-color: black; */
+
+}
+
+body #bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: black;
+}
+
+body h1 {
+    color: rgba(140, 54, 250, 1);
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: white 0 0 2px;
+}
+
+.container {
+    margin: 3rem auto;
+    /* height: 100vh; */
+    width: 50%;
+    border: 2px solid rgb(73, 34, 136);
+    border-radius: .5rem;
+    overflow: hidden;
+    padding: .3rem .2rem;
+    background-color: rgba(40, 40, 40, .4);
+}
+
+#card {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(202, 201, 201);
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: rgb(48, 15, 90);
+    margin: .2rem;
+    border: 1px solid rgb(63, 42, 99);
+    border-radius: .5rem;
+}
+
+.searchbox input {
+    height: 100%;
+    color: rgb(215, 214, 214);
+    width: 90%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.searchbox img {
+    height: 100%;
+    /* width: 6%; */
+    padding: .2rem;
+    cursor: pointer;
+    /* background-color: rgb(55, 31, 31); */
+    border-radius: .5rem;
+
+}
+
+
+
+
+.left {
+    background-color: rgba(27, 19, 39, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 50%;
+    padding: 1rem;
+    color: rgb(231, 231, 231);
+}
+
+.left .profile {
+    /* margin: 1rem; */
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    height: 50%;
+}
+
+.left .profile img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.right {
+    background-color: rgba(43, 30, 62, 0.6);
+    height: 20rem;
+    width: 50%;
+    font-weight: bold;
+    color: rgb(87, 21, 21);
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: .9rem;
+}
+
+.right p {
+
+    color: rgb(218, 218, 218);
+}
+
+.right a {
+    color: rgb(215, 215, 215);
+    width: 100%;
+    background-color: rgb(79, 44, 135);
+    border-radius: .5rem;
+    border: none;
+    padding: .3rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem 0;
+    transition: all 0.1s ease-in;
+
+}
+
+.right a:hover {
+    background-color: rgb(60, 35, 100);
+}
+
+#err {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(196, 196, 196);
+}
+
+@media only screen and (max-width:680px) {
+    .left .profile img {
+        height: 80%;
+    }
+
+    body {
+        font-size: .9rem;
+    }
+
+    .right {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .left .profile img {
+        height: 70%;
+    }
+
+    body {
+        font-size: .8rem;
+    }
+
+    .right {
+        font-size: .7rem;
+    }
+
+    #goto {
+        font-size: .7rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .left .profile img {
+        height: 60%;
+    }
+
+    body {
+        font-size: .8rem;
+    }
+
+    .right {
+        font-size: .7rem;
+        line-height: 1rem;
+        line-height: 1rem;
+    }
+
+    #goto {
+        font-size: .7rem;
+        padding: .2rem;
+    }
+}
